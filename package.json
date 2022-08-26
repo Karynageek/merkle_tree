@@ -1,0 +1,67 @@
+{
+  "name": "wildwestnft-smart-contracts",
+  "version": "1.0.0",
+  "description": "Wild West NFT Smart contracts project",
+  "main": "hardhat.config.ts",
+  "scripts": {
+    "test": "npx hardhat test",
+    "checkimages": "npx hardhat run scripts/images-checker.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderem49/wildwestnft-smart-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "nft",
+    "blockchain",
+    "ethereum",
+    "smart-contracts"
+  ],
+  "author": "Alexander Malyshev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexanderem49/wildwestnft-smart-contracts/issues"
+  },
+  "homepage": "https://github.com/alexanderem49/wildwestnft-smart-contracts#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.7.0",
+    "@typechain/ethers-v5": "^7.2.0",
+    "@typechain/hardhat": "^2.3.1",
+    "@types/chai": "^4.3.1",
+    "@types/download": "^8.0.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.0.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.9.7",
+    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-ipfs": "^0.0.1",
+    "interface-blockstore": "^3.0.0",
+    "ipfs-http-client": "^56.0.3",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.32",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.8.1",
+    "typechain": "^5.2.0",
+    "typescript": "^4.7.4",
+    "typescript-solidity-merkle-tree": "^0.3.0"
+  },
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./client": "./client.js"
+  }
+}
